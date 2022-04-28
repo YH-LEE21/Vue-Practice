@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import ParentComponent from '../views/ParentComponent'
+import NestedComponent from '../components/NestedComponent'
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/to811',
+    name: 'to811',
+    component: NestedComponent
+  },
+  {
+    path: '/to813',
+    name: 'to813',
+    component: ParentComponent
   },
   {
     path: '/about',
